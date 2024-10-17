@@ -16,7 +16,7 @@ var slidingWindowTestCases = []struct {
 	{"3", []int{3}, 1, 3},
 	// empty input
 	{"4", []int{}, 1, -1},
-	// empty input
+	// negative sum
 	{"5", []int{ -1, -2, -5, -9, 0, 6, -1}, 4, -4},
 }
 
