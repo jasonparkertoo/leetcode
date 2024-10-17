@@ -5,11 +5,11 @@ import "testing"
 var slidingWindowTestCases = []struct {
 	Name  string
 	Input []int
-	K int
+	K     int
 	Want  int
 }{
 	// positive test case
-	{"1", []int{3,1,4,3,2,6,6,3,4,4}, 3, 15},
+	{"1", []int{3, 1, 4, 3, 2, 6, 6, 3, 4, 4}, 3, 15},
 	// window larger than input length
 	{"2", []int{3}, 3, -1},
 	// single element input
@@ -17,7 +17,7 @@ var slidingWindowTestCases = []struct {
 	// empty input
 	{"4", []int{}, 1, -1},
 	// negative sum
-	{"5", []int{ -1, -2, -5, -9, 0, 6, -1}, 4, -4},
+	{"5", []int{-1, -2, -5, -9, 0, 6, -1}, 4, -4},
 }
 
 func TestSlidingWindow(t *testing.T) {
@@ -28,4 +28,3 @@ func TestSlidingWindow(t *testing.T) {
 		}
 	}
 }
-
